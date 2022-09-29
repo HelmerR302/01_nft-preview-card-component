@@ -1,0 +1,154 @@
+body {
+  background-color:#0d192b; /* this is fallback color */
+  background-color: hsl(217, 54%, 11%);
+  /* Older browsers such as Internet Explorer 8 and earlier, do not understand
+  rgba(), hsl(), or hsla(), and as a result will drop any declarations containing them.
+
+  To prevent this, you should always include a fallback color in either hexadecimal,
+  named, or rgb() format.
+
+  This fallback colour should always go before the new colour to ensure older browsers see
+  and use it correctly, and that newer browsers continue on to use the newer colour format. */
+}
+
+
+.card {
+  /* position + top/left: line up the left and top edge of the div
+  with the center of the page horizontally and vertically (ie. 50% to the right and down the page).
+  However, it is not centered by the middle point of the div. Thus, use transform (),
+  to move the div along the XY-axis */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0 18px 5px 15px hsl(216, 50%, 10%);
+  border-radius: 3%;
+  width: 30%;
+  padding: 23px;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* -------- all fonts -----------*/
+h3 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+
+p.description {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.text {
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* ------------------- Top image ------------------*/
+.topimg {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.featureimg {
+  border-radius: 3%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 3%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+.viewicon {
+  opacity: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1;
+}
+
+/* ---------------------------------------------------*/
+.description {
+  margin: 12px 0;
+  padding: 0;
+}
+
+.details {
+  padding: 12px 0;
+}
+
+.icon, .text {
+  display: inline-block;
+  vertical-align: middle;
+  /* vertical-align only apply to inline elements */
+}
+
+.detailright {
+  float: right;
+}
+
+.icon {
+  margin-right: 3px;
+}
+
+hr {
+  border-top: 2px solid hsl(215, 32%, 40%);
+  /* gradient line
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), hsl(215, 32%, 27%), rgba(0, 0, 0, 0));*/
+}
+
+.profileimg {
+  width: 10%;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.footer {
+  margin-bottom: 2px;
+}
+
+.author {
+  font-family: 'Outfit', sans-serif;
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.highlight {
+  color: white;
+}
+
+/* ------------------- Responsive  breakpoint at 375px ------------------*/
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 75%;
+  }
+}
+
+/*--------------------- All hover effect ---------------------*/
+.highlight:hover, h3:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.topimg:hover .overlay, .topimg:hover .viewicon {
+  opacity: 0.6;
+  cursor: pointer;
+}

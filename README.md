@@ -7,4 +7,4 @@ The goal of this challenge is to build this preview card component and make it l
 ---
 
 Languages & Frameworks:  
-HTML; CSS
+HTML; CSS; Bootstrap

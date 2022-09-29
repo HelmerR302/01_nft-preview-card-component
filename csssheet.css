@@ -19,13 +19,13 @@ body {
   background-color: hsl(216, 50%, 16%);
   box-shadow: 0 18px 5px 15px hsl(216, 50%, 10%);
   border-radius: 3%;
-  width: 26%;
-  padding: 23px;
+  width: 25%;
+  padding: 20px;
   font-family: "Outfit", sans-serif;
 }
 
 /* -------- all fonts -----------*/
-h3 {
+h4 {
   color: hsl(0, 0%, 100%);
   font-weight: 600;
 }
@@ -36,10 +36,9 @@ p.description {
   font-size: 16px;
 }
 
-.text {
-  color: hsl(215, 51%, 70%);
+.dtext {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* ------------------- Top image ------------------*/
@@ -85,26 +84,32 @@ p.description {
 }
 
 .details {
-  margin: 10px 0;
+  margin: 8px 0 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.icon,
-.text {
-  display: inline-block;
-  vertical-align: middle;
-  /* vertical-align only apply to inline elements */
+.detailsleft {
+  color: hsl(178, 100%, 50%);
 }
 
 .detailright {
-  float: right;
+  color: #8bacd9;
 }
 
 .icon {
-  margin-right: 3px;
+  padding-right: 3px;
+}
+
+.icon,
+.dtext {
+  vertical-align: middle;
 }
 
 hr {
   border: 1px solid hsl(215, 32%, 40%);
+  margin-top: 8px;
 }
 
 .profileimg {
@@ -116,7 +121,7 @@ hr {
 }
 
 .footer {
-  margin: 10px 0px;
+  margin: 8px 0px;
 }
 
 .author {
@@ -139,7 +144,7 @@ hr {
 
 /*--------------------- All hover effect ---------------------*/
 .highlight:hover,
-h3:hover {
+h4:hover {
   color: hsl(178, 100%, 50%);
   cursor: pointer;
 }

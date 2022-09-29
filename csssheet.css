@@ -1,5 +1,5 @@
 body {
-  background-color:#0d192b; /* this is fallback color */
+  background-color: #0d192b; /* this is fallback color */
   background-color: hsl(217, 54%, 11%);
   /* Older browsers such as Internet Explorer 8 and earlier, do not understand
   rgba(), hsl(), or hsla(), and as a result will drop any declarations containing them.
@@ -11,12 +11,7 @@ body {
   and use it correctly, and that newer browsers continue on to use the newer colour format. */
 }
 
-
 .card {
-  /* position + top/left: line up the left and top edge of the div
-  with the center of the page horizontally and vertically (ie. 50% to the right and down the page).
-  However, it is not centered by the middle point of the div. Thus, use transform (),
-  to move the div along the XY-axis */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -26,7 +21,7 @@ body {
   border-radius: 3%;
   width: 30%;
   padding: 23px;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 /* -------- all fonts -----------*/
@@ -89,10 +84,11 @@ p.description {
 }
 
 .details {
-  padding: 12px 0;
+  margin: 18px 0;
 }
 
-.icon, .text {
+.icon,
+.text {
   display: inline-block;
   vertical-align: middle;
   /* vertical-align only apply to inline elements */
@@ -107,9 +103,7 @@ p.description {
 }
 
 hr {
-  border-top: 2px solid hsl(215, 32%, 40%);
-  /* gradient line
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), hsl(215, 32%, 27%), rgba(0, 0, 0, 0));*/
+  border: 1px solid hsl(215, 32%, 40%);
 }
 
 .profileimg {
@@ -121,11 +115,11 @@ hr {
 }
 
 .footer {
-  margin-bottom: 2px;
+  margin: 18px 0px;
 }
 
 .author {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   color: hsl(215, 51%, 70%);
   font-weight: 400;
   font-size: 15px;
@@ -143,12 +137,14 @@ hr {
 }
 
 /*--------------------- All hover effect ---------------------*/
-.highlight:hover, h3:hover {
+.highlight:hover,
+h3:hover {
   color: hsl(178, 100%, 50%);
   cursor: pointer;
 }
 
-.topimg:hover .overlay, .topimg:hover .viewicon {
+.topimg:hover .overlay,
+.topimg:hover .viewicon {
   opacity: 0.6;
   cursor: pointer;
 }

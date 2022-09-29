@@ -19,7 +19,7 @@ body {
   background-color: hsl(216, 50%, 16%);
   box-shadow: 0 18px 5px 15px hsl(216, 50%, 10%);
   border-radius: 3%;
-  width: 30%;
+  width: 25%;
   padding: 23px;
   font-family: "Outfit", sans-serif;
 }
@@ -79,12 +79,13 @@ p.description {
 
 /* ---------------------------------------------------*/
 .description {
-  margin: 12px 0;
+  margin-top: 12px;
+  margin-bottom: 6px;
   padding: 0;
 }
 
 .details {
-  margin: 18px 0;
+  margin: 10px 0;
 }
 
 .icon,
@@ -115,7 +116,7 @@ hr {
 }
 
 .footer {
-  margin: 18px 0px;
+  margin: 10px 0px;
 }
 
 .author {

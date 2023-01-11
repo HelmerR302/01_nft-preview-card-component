@@ -9,7 +9,7 @@ This is my solution to the [NFT preview card component challenge on Frontend Men
 
 ## Screenshot
 
-![Preview]()
+![Preview](https://github.com/HelmerR302/01_nft-preview-card-component/blob/main/Preview.png?raw=true)
 
 ## Live link
 
